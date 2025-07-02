@@ -43,8 +43,8 @@ services:
       opencloud-net:
     entrypoint: [ "/bin/sh", "/opt/bitnami/scripts/openldap/docker-entrypoint-override.sh", "/opt/bitnami/scripts/openldap/run.sh" ]
     environment:
-      BITNAMI_DEBUG: true
-      LDAP_TLS_VERIFY_CLIENT: never
+      BITNAMI_DEBUG: "true"
+      LDAP_TLS_VERIFY_CLIENT: "never"
       LDAP_ENABLE_TLS: "yes"
       LDAP_TLS_CA_FILE: /opt/bitnami/openldap/share/openldap.crt
       LDAP_TLS_CERT_FILE: /opt/bitnami/openldap/share/openldap.crt
